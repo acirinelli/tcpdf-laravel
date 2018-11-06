@@ -28,6 +28,7 @@ class TCPDF
             static::$format ? static::$format : Config::get('tcpdf.page_format', 'A4'),
             Config::get('tcpdf.unicode', true),
             Config::get('tcpdf.encoding', 'UTF-8')
+            Config::get('tcpdf.font_directory', '')
         );
     }
 
